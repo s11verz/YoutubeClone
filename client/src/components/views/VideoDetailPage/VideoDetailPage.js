@@ -1,6 +1,7 @@
 import React,{useEffect,useState} from 'react'
 import { List, Avatar, Row, Col } from 'antd';
 import Axios from 'axios';
+import SideVideo from './Sections/SideVideo';
 //import { response } from 'express';
 
 function VideoDetailPage(props) {
@@ -25,6 +26,7 @@ function VideoDetailPage(props) {
         return (
             <Row gutter={[16,16]}>
                 <Col lg={18} xs={24}>
+                    <SideVideo />
                     <div style={{width:'100%', padding:'3rem 4rem'}}>
                         <video style={{width:'100%'}} src={'http://localhost:5000/${VideoDetail.filePath}'} controls/>
                         <List.Item actions>
