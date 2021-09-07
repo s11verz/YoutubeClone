@@ -87,13 +87,13 @@ function VideoUploadPage(props){
         e.preventDefault();
         const variables={
             writer: user.userData._id,
-            title: title,
+            title: VideoTitle,
             description: Description,
-            privacy: privacy,
+            privacy: Private,
             filePath: FilePath,
-            category: Categories,
+            category: Category,
             duration: Duration,
-            thumbnail: Thumbnail
+            thumbnail: ThumbnailPath
         }
 
         Axios.post('/api/video/uploadVideo',variables)
