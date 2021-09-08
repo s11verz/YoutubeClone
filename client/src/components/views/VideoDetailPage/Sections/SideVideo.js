@@ -3,7 +3,7 @@ import axios from 'axios';
 
 function SideVideo() {
 
-    const [sideVideos, setsideVideos] = useState([[]])
+    const [sideVideos, setsideVideos] = useState([])
 
     useEffect(() => {
         Axios.get('/api/video/getVideos')
